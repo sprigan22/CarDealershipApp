@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="base_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="614.0" prefWidth="443.0" style="-fx-background-color: #333;"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controlAppPackage.MainControl">
+   <ImageView fx:id="backgroundMainPNG" fitHeight="421.0" fitWidth="524.0" layoutX="26.0" layoutY="195.0"
+              pickOnBounds="true" preserveRatio="true">
+      <Image url="@images/backgroundMainPNG.png"/>
+   </ImageView>
+   <ImageView fx:id="dealPNG" fitHeight="80.0" fitWidth="174.0" layoutX="359.0" layoutY="542.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@images/dealPNG.png"/>
+   </ImageView>
+   <Accordion/>
+   <AnchorPane fx:id="twice_pane" layoutY="-1.6" prefHeight="80.0" prefWidth="443.0"
+               style="-fx-background-color: black;" AnchorPane.topAnchor="-2.0">
+      <Text fill="#dfd7d7" fontSmoothingType="LCD" layoutX="76.0" layoutY="48.0" strokeType="OUTSIDE"
+            strokeWidth="0.0" text="Dealership" textAlignment="CENTER" wrappingWidth="291.73676109313965">
+         <font>
+            <Font name="System Bold Italic" size="44.0"/>
+         </font>
+      </Text>
+   </AnchorPane>
+   <Button fx:id="saveFileButtTxtButt" layoutX="196.0" layoutY="195.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;" text="Save cars in file(text)"
+           textOverrun="WORD_ELLIPSIS" onAction="#setSaveFileButtTxtButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="readCarsBinaryButt" layoutX="196.0" layoutY="294.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;" text="Read cars in file(binary)"
+           textOverrun="WORD_ELLIPSIS" onAction="#setReadCarsBinaryButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="readCarsFileTxtButt" layoutX="196.0" layoutY="228.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;" text="Read cars in file(text)"
+           textOverrun="WORD_ELLIPSIS" onAction="#setReadCarsFileTxtButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="saveCarsFileBinaryButt" layoutX="196.0" layoutY="261.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;" text="Save cars in file(binary)"
+           textOverrun="WORD_ELLIPSIS" onAction="#setSaveCarsFileBinaryButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="SearchCarByModelButt" layoutX="196.0" layoutY="88.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;" text="Search car by model" textOverrun="WORD_ELLIPSIS"
+           onAction="#setSearchCarByModelButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="CarByYearAndPriceHighButt" layoutX="196.0" layoutY="161.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;"
+           text="Search a car by a given year and the price is greater than " textOverrun="WORD_ELLIPSIS"
+           onAction="#setCarByYearAndPriceHighButt">
+      <font>
+         <Font name="System Bold Italic" size="7.0"/>
+      </font>
+   </Button>
+   <Button fx:id="operationYearMoreButt" layoutX="196.0" layoutY="123.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;"
+           text="Search for a car in operation for more than n years" textOverrun="WORD_ELLIPSIS"
+           onAction="#setOperationYearMoreButt">
+      <font>
+         <Font name="System Bold Italic" size="9.0"/>
+      </font>
+   </Button>
+   <Button fx:id="infoButt" layoutX="14.0" layoutY="582.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="54.0"
+           text="Info" textOverrun="WORD_ELLIPSIS" onAction="#setInfoButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="exitButt" layoutX="142.0" layoutY="582.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="54.0"
+           text="Exit" textOverrun="WORD_ELLIPSIS" onAction="#setExitButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="helpButt" layoutX="78.0" layoutY="582.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="54.0"
+           text="Help" textOverrun="WORD_ELLIPSIS" onAction="#setHelpButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="addNewCarButt" layoutX="196.0" layoutY="398.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;" text="Add new car" textOverrun="WORD_ELLIPSIS"
+           onAction="#setAddNewCarButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="sortTechnicalInspectButt" layoutX="196.0" layoutY="328.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;" text="Sort by technical inspect"
+           textOverrun="WORD_ELLIPSIS" onAction="#carsByTechInspect">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="searchCarButt" layoutX="196.0" layoutY="362.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;" text="Search car" textOverrun="WORD_ELLIPSIS"
+           onAction="#setSearchCarButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <Button fx:id="HighestPriceButt" layoutX="196.0" layoutY="499.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;" text="List model, the car of the highest price"
+           textOverrun="WORD_ELLIPSIS" onAction="#CarsOnlyHighestPrice">
+      <font>
+         <Font name="System Bold Italic" size="9.0"/>
+      </font>
+   </Button>
+   <Button fx:id="listModelManufacButt" layoutX="196.0" layoutY="465.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;"
+           text="List of all cars of  model and descending year of manufacture" onAction="#CarsModelManufac">
+      <font>
+         <Font name="System Bold Italic" size="8.0"/>
+      </font>
+   </Button>
+   <Button fx:id="deleteCarButt" layoutX="196.0" layoutY="430.0" mnemonicParsing="false" prefHeight="26.0"
+           prefWidth="243.0" style="-fx-background-color: gray;" text="Delete car" textOverrun="WORD_ELLIPSIS"
+           onAction="#setDeleteCarButt">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </Button>
+   <ImageView fx:id="firstCarPNG" fitHeight="150.0" fitWidth="195.0" layoutY="76.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@images/firstCarPNG.png"/>
+   </ImageView>
+</AnchorPane>

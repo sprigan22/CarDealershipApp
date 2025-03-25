@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="controlAppPackage.ControlTableView" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="838.0"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <TableView fx:id="CarTableView" prefHeight="377.0" prefWidth="838.0" style="-fx-background-color: gray;">
+      <columns>
+          <TableColumn fx:id="CarId" prefWidth="33.5999755859375" text="Id"/>
+          <TableColumn fx:id="carModel" prefWidth="115.20004272460938" text="Model"/>
+          <TableColumn fx:id="carYearCreate" prefWidth="77.5999755859375" text="Year create"/>
+          <TableColumn fx:id="carPrice" prefWidth="81.5999755859375" text="Price"/>
+          <TableColumn fx:id="carRegisterName" prefWidth="231.199951171875" text="Register Number"/>
+          <TableColumn fx:id="carMilleage" minWidth="0.0" prefWidth="92.0" text="Mileage"/>
+          <TableColumn fx:id="carLastTechnicalInspection" prefWidth="204.800048828125"
+                       text="Last techinal inspection"/>
+      </columns>
+    </TableView>
+    <AnchorPane fx:id="background2" layoutY="378.0" prefHeight="56.0" prefWidth="838.0"
+                style="-fx-background-color: #333;">
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="638.0" pickOnBounds="true" preserveRatio="true"/>
+        <ImageView fx:id="salesPNG" fitHeight="81.0" fitWidth="241.0" layoutX="597.0" layoutY="69.0">
+            <Image url="@images/underSpreadsheet.png"/>
+        </ImageView>
+    </AnchorPane>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:controller="controlAppPackage.ControlEnterCar" fx:id="backStage" maxHeight="-Infinity"
+            maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="386.0"
+            style="-fx-background-color: #444;" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
+   <TextField fx:id="inputIdTextField" layoutX="20.0" layoutY="87.0" prefHeight="26.0" prefWidth="170.0"
+              promptText="Input id" style="-fx-background-color: gray;"/>
+   <TextField fx:id="inputPriceTextField" layoutX="20.0" layoutY="205.0" prefHeight="26.0" prefWidth="170.0"
+              promptText="Input price" style="-fx-background-color: gray;"/>
+   <TextField fx:id="inputModelTextField" layoutX="20.0" layoutY="126.0" prefHeight="26.0" prefWidth="170.0"
+              promptText="Input model" style="-fx-background-color: gray;"/>
+   <TextField fx:id="inputYearTextField" layoutX="20.0" layoutY="163.0" prefHeight="26.0" prefWidth="170.0"
+              promptText="Input year create" style="-fx-background-color: gray;"/>
+   <TextField fx:id="inputRegisterNameTextField" layoutX="20.0" layoutY="244.0" prefHeight="26.0" prefWidth="170.0"
+              promptText="Input register name" style="-fx-background-color: gray;"/>
+   <TextField fx:id="inputMileageTextField" layoutX="20.0" layoutY="284.0" prefHeight="26.0" prefWidth="170.0"
+              promptText="Input mileage" style="-fx-background-color: gray;"/>
+   <TextField fx:id="InputDateLastInspectionTextField" layoutX="21.0" layoutY="329.0" prefHeight="26.0"
+              prefWidth="170.0" promptText="Input date last Inspection like 10/10/2010"
+              style="-fx-background-color: gray;">
+      <font>
+         <Font size="8.0"/>
+      </font>
+   </TextField>
+   <Text fx:id="title" layoutX="106.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0"
+         text="Enter vehicle details">
+      <font>
+         <Font name="System Bold Italic" size="22.0"/>
+      </font>
+   </Text>
+   <Button fx:id="saveButton" layoutX="248.0" layoutY="393.0" mnemonicParsing="false" prefHeight="29.0"
+           prefWidth="104.0" style="-fx-background-color: gray;" text="Save" onAction="#setSaveButton"/>
+</AnchorPane>
